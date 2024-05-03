@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { socialLinks } from '../_model/socialLinks';
 
 @Component({
   selector: 'app-contact',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
+  
+  socialLinks = socialLinks
 }
