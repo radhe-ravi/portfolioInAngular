@@ -1,15 +1,18 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, Renderer2,Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Sender } from '../_model/Sender';
+import {NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [],
+  imports: [NgForOf],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent {
 
+  @Input() sender = {}as Sender;
   constructor(private titleService: Title,private renderer:Renderer2) { 
     
     this.titleService.setTitle('Radhe Ravi - Resume');

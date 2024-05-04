@@ -5,9 +5,12 @@
             {{project.name}}
         </h5>
             <img [src]="project.picture" class="img-responsive" alt="img-responsive" style="max-width: 100%; max-height: 200px; display: flex; justify-content: center;" />
-        <p class="card-text">
-            {{project.summary}}
-        </p>
+
+            <div class="Box" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px; text-align: justify;">
+                <p class="card-text">
+                    {{project.summary}}
+                </p>
+            </div>
         <!-- <button class="btn btn-primary">
             <a [href]="project.projectLink" target="_blank"></a> Github
         </button> -->

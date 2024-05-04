@@ -66,9 +66,9 @@
                     <h4 style="color: rgb(39, 80, 82);">
                         Programming Language
                     </h4>
-                    <ul style="text-align: left; margin-top: auto;"> 
-                        <li>
-                            Java
+                    <ul style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly"> 
+                        <li *ngFor = "let lang of sender.language"> Java
+                            
                         </li>
                         
                         <li>
@@ -81,7 +81,7 @@
                         
                         <li>
                             Typescript
-                        </li>
+                        </li> 
                     </ul>
                 </div>
 

@@ -65,7 +65,7 @@ export class ProjectsComponent {
     {
       id: 5,
       name: "Authentication",
-      summary: "A portfolio is a website that showcases a person's skills, experiences, and achievements. A portfolio can be built using Angular and TypeScript.",
+      summary: "Designd a secure and scalable authentication microservice for a portfolio website project using Spring Boot and Java, incorporating best practices for user authentication and authorization.",
       description: " something",
       projectLink: "https://github.com/RadheRavi3021/portfolioInAngular",
       tags: [Tag.JAVA, Tag.SPRINGBOOT],

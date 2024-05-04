@@ -6,28 +6,27 @@
         <p>
             Feel free to contact me.
         </p>
+        <div class="Box" style="display: inline-flex;">
+            <ul style="list-style-type:none;">
 
-        <div class="Box">
-            <ul style="display: inline-flex; justify-content:center; list-style-type: none; align-items: self-end; margin: 0 0 25px 25px;">
+                <li>
+                    <a [href]="socialLinks.PHONE" target="">
+                        <img src="../../assets/social/icons8-phone-48.png" alt="..." class="rounded-circle"
+                            style="min-width: 24px; min-height: 24px; max-width: 24px; max-height: 24px;">
+                    </a>
+                    <b>{{socialLinks.PHONE}}</b>
+                </li>
+                
                 <li>
                     <a [href]="socialLinks.EMAIL" target="">
                         <img src="../../assets/social/icons8-gmail-48.png" alt="..." class="rounded-circle"
                             style="min-width: 24px; min-height: 24px; max-width: 36px; max-height: 24px;">
                     </a>
-                </li>
-                <b>{{socialLinks.EMAIL}}</b>
-                <div style="margin-left: 60px; margin-right: 60px;">
-
-                </div>
-                <li style="align-items: flex-end;">
-                    <a [href]="socialLinks.PHONE" target="">
-                        <img src="../../assets/social/icons8-phone-48.png" alt="..." class="rounded-circle"
-                            style="min-width: 24px; min-height: 24px; max-width: 24px; max-height: 24px;">
-                    </a>
+                    <b>{{socialLinks.EMAIL}}</b>
                 </li>
 
-
-                <b>{{socialLinks.PHONE}}</b>
+              
+                
             </ul>
         </div>
 
