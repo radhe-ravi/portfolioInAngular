@@ -1,12 +1,13 @@
 <div class="container text-center">
     <button @flyInOut (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border"> Download Resume</button>
 
-    <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px; background-color: rgb(90, 153, 153);">
+    <section class="shadow"
+        style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px; background-color: rgb(90, 153, 153);">
         <div @flyOutIn class="accordion" id="accordionExample" style="background-color: rgb(38, 146, 146);">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Education
                     </button>
                 </h2>
@@ -14,7 +15,8 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body" style="text-align: left;">
                         <h3 style="color: blue;">
-                            Chandidarh University <strong style="font-size: x-small ;display: inline; color: black;">2020 -
+                            Chandidarh University <strong
+                                style="font-size: x-small ;display: inline; color: black;">2020 -
                                 2024</strong>
                         </h3>
                         <p style="font-size: smaller;">
@@ -33,7 +35,7 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body" style="text-align: left;">
-    
+
                         <ul>
                             <li *ngFor="let coursera of certificates.coursera">
                                 {{coursera}}
@@ -42,8 +44,8 @@
                                 {{coursera}}
                             </li>
                         </ul>
-    
-    
+
+
                     </div>
                 </div>
             </div>
@@ -57,108 +59,91 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <div class="card shadow border-sucess" style="display:flex;margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px">
-    
-                            <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;background-color: rgb(122, 132, 146);">
-    
-    
-                                <div class="Box" style="justify-content: space-evenly;">
+                        <div class="card shadow border-sucess"
+                            style="display:flex;margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px">
+
+                            <section class="shadow"
+                                style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;background-color: rgb(122, 132, 146);">
+
+
+                                <div class="Box" style="justify-content: center;">
                                     <h4 style="color: rgb(39, 80, 82);">
                                         Programming Language
                                     </h4>
-                                    <ul style="text-align: left; justify-content: space-evenly;list-style-type:none">
-    
-                                        <li *ngFor="let lang of skills?.language">{{ lang }}</li>
-                                    </ul>
+                                    <li style="list-style: none; justify-content:space-around;"
+                                        *ngFor="let lang of skills?.language">{{ lang }}</li>
                                 </div>
                             </section>
-    
+
                             <!-- 2nd Box -->
-    
-    
-                            <section class="shadow-lg rounded" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
+
+
+                            <section class="shadow-lg rounded"
+                                style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
                                 <div class="Box" style="justify-content: center;">
                                     <h4 style="color: rgb(39, 80, 82);">
                                         Libraries and Frameworks
                                     </h4>
-                                    <div class="d-flex">
-                                        <ul
-                                        style="text-align: left; margin-top: auto; justify-content: space-around; list-style-type:none;">
-    
-                                        <li *ngFor="let lang of skills?.library">{{ lang }}</li>
-                                    </ul>
+                                    <li style="list-style: none; justify-content:space-around;"
+                                        *ngFor="let lang of skills?.library">{{ lang }}</li>
+                                    <li style="list-style: none; justify-content:space-around;"
+                                        *ngFor="let lang of skills?.framework">{{ lang }}</li>
 
-                                    </div>
-       
-                                    <div class="card">
-                                        <ul
-                                        style="text-align: center; margin-top: auto;list-style-type:none;">
-    
-                                        <li *ngFor="let lang of skills?.framework">{{ lang }}</li>
-                                    </ul>
-                                    </div>
                                 </div>
-    
+
                             </section>
-    
-    
-                            <section class="shadow-lg rounded " style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;background-color: rgb(122, 132, 146);">
-    
+
+
+                            <section class="shadow-lg rounded "
+                                style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;background-color: rgb(122, 132, 146);">
+
                                 <div class="Box" style="justify-content: space-evenly;">
                                     <h4 style="color: rgb(39, 80, 82);">
                                         Databases
                                     </h4>
-                                    <ul
-                                        style="text-align: left; margin-top: auto; justify-content: space-evenly;list-style-type:none">
-    
-                                        <li *ngFor="let tool of skills?.database">{{ tool }}</li>
-                                    </ul>
+                                    <li style="list-style: none; justify-content:space-around;"
+                                        *ngFor="let tool of skills?.database">{{ tool }}</li>
                                 </div>
                             </section>
-    
-    
+
+
                             <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
-    
+
                                 <div class="Box" style="justify-content: space-evenly;">
                                     <h4 style="color: rgb(39, 80, 82);">
                                         Tools
                                     </h4>
-                                    <ul
-                                        style="text-align: left; margin-top: auto; justify-content: space-evenly;list-style-type:none">
-    
-                                        <li *ngFor="let tool of skills?.tools">{{ tool }}</li>
-                                    </ul>
+                                    <li style="list-style: none; justify-content:space-around;"
+                                        *ngFor="let tool of skills?.tools">{{ tool }}</li>
+
                                 </div>
                             </section>
-    
-    
-    
-    
+
+
+
+
                             <!-- 3rd Box -->
-    
-                            <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;background-color: rgb(122, 132, 146);">
-    
+
+                            <section class="shadow"
+                                style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;background-color: rgb(122, 132, 146);">
+
                                 <div class="Box" style="justify-content: space-evenly;">
                                     <h4 style="color: rgb(39, 80, 82);">
                                         Other Skills
                                     </h4>
-                                    <ul
-                                        style="text-align: left; margin-top: auto; justify-content: space-evenly;list-style-type:none">
-                                        <li *ngFor="let tool of skills?.other">{{ tool }}</li>
-                                    </ul>
-                                    <ul
-                                        style="text-align: left; margin-top: auto; justify-content: space-evenly;list-style-type:none;">
-    
-                                        <li *ngFor="let tool of skills?.devops">{{ tool }}</li>
-                                    </ul>
+                                    <li style="list-style: none; justify-content:space-around;" *ngFor="let tool of skills?.other">{{ tool }}</li>
+
+
+                                    <li style="list-style: none; justify-content:space-around;" *ngFor="let tool of skills?.devops">{{ tool }}</li>
+
                                 </div>
                             </section>
-    
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </section>
 </div>
