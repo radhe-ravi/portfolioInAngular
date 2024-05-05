@@ -1,13 +1,37 @@
 import { Component, Renderer2,Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import {NgForOf} from "@angular/common";
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
   imports: [NgForOf],
   templateUrl: './resume.component.html',
-  styleUrl: './resume.component.css'
+  styleUrl: './resume.component.css',
+  animations: [
+    trigger('flyInOut', [
+      state('in', style({ transform: 'translateX(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateX(-100%)' }),
+        animate(500)
+      ]),
+    ]),
+    trigger('fadein',[
+      transition('void=>*',[
+        style({opacity:0}),
+        animate(1500,style({opacity:1})),
+      ])
+    ]),
+
+    trigger('flyOutIn', [
+      state('in', style({ transform: 'translateY(-100%)' })),
+      transition('void => *', [
+        style({ transform: 'translateY(100%)' }),
+        animate(1000)
+      ]),
+    ]),
+  ]
 })
 export class ResumeComponent {
 

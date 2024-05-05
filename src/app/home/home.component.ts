@@ -14,7 +14,7 @@ import { Title } from '@angular/platform-browser';
       state('in', style({ transform: 'translateX(0)' })),
       transition('void => *', [
         style({ transform: 'translateX(-100%)' }),
-        animate(1500)
+        animate(500)
       ]),
     ]),
     trigger('fadein',[
@@ -28,7 +28,7 @@ import { Title } from '@angular/platform-browser';
       state('closed', style({ transform: 'translateX(-100%)' })),
       transition('* => void', [
         style({ transform: 'translateX(0)' }),
-        animate(1500)
+        animate(500)
       ]),
     ])
   ]

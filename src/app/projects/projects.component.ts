@@ -17,9 +17,15 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
       state('in', style({ transform: 'translateY(-100%)' })),
       transition('void => *', [
         style({ transform: 'translateY(100%)' }),
-        animate(1500)
+        animate(1000)
       ]),
     ]),
+    trigger('fadein',[
+      transition('void=>*',[
+        style({opacity:0}),
+        animate(1500,style({opacity:1})),
+      ])
+    ])
   ]
 
   /*
