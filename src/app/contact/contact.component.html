@@ -1,55 +1,69 @@
-<div class="container">
-    <div class="text-center border mb-5 shadow rounded">
-        <h2>
-            Contact Me
-        </h2>
-        <p>
-            Feel free to contact me.
-        </p>
-        <div class="Box" style="display: inline-flex;">
-            <ul style="list-style-type:none;">
+<div class="card">
 
-                <li>
-                    <a [href]="socialLinks.PHONE" target="">
-                        <img src="../../assets/social/icons8-phone-48.png" alt="..." class="rounded-circle"
-                            style="min-width: 24px; min-height: 24px; max-width: 24px; max-height: 24px;">
-                    </a>
-                    <b>{{socialLinks.PHONE}}</b>
-                </li>
-                
-                <li>
-                    <a [href]="socialLinks.EMAIL" target="">
-                        <img src="../../assets/social/icons8-gmail-48.png" alt="..." class="rounded-circle"
-                            style="min-width: 24px; min-height: 24px; max-width: 36px; max-height: 24px;">
-                    </a>
-                    <b>{{socialLinks.EMAIL}}</b>
-                </li>
+    <div class="container" style="align-items: center; margin-top: 35px; padding:15px;">
 
-              
-                
-            </ul>
+        <div class="text-center border mb-5 shadow rounded border-success" style="background-color: rgb(238, 227, 227)">
+            <h2 style="margin-top: 10px; padding: 15px;">
+                Contact Me
+            </h2>
+            <p>
+                Feel free to contact me.
+            </p>
+                <div class="d-flex flex-wrap justify-content-center">
+    
+                    <ul style="list-style-type:none;">
+    
+                        <li>
+                            <a [href]="socialLinks.PHONE" target="">
+                                <img src="../../assets/social/icons8-phone-48.png" alt="..." class="rounded-circle"
+                                    style="min-width: 24px; min-height: 24px; max-width: 24px; max-height: 24px;">
+                            </a>
+                            <b>{{socialLinks.PHONE}}</b>
+                        </li>
+                        
+                        <li>
+                            <a [href]="socialLinks.EMAIL" target="">
+                                <img src="../../assets/social/icons8-gmail-48.png" alt="..." class="rounded-circle"
+                                    style="min-width: 24px; min-height: 24px; max-width: 36px; max-height: 24px;">
+                            </a>
+                            <b>{{socialLinks.EMAIL}}</b>
+                        </li>
+                    </ul>
+                </div>
+    
+            <div class="card-footer">
+                <div class="d-flex flex-wrap justify-content-center">
+    
+                        <a [href]="socialLinks.GITHUB" target="_blank">
+                            <img src="../../assets/social/icons8-github-48.png" alt="..." class="rounded-circle"
+                                style="min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px;">
+                        </a>
+                    
+                        <a [href]="socialLinks.INSTAGRAM" target="_blank">
+                            <img src="../../assets/social/icons8-instagram-48.png" alt="..." class="rounded-circle"
+                                style="min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px;">
+                        </a>
+                    
+                        <a [href]="socialLinks.LINKEDIN" target="_blank">
+                            <img src="../../assets/social/icons8-linkedin-48.png" alt="..." class="rounded-circle"
+                                style="min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px;">
+                        </a>
+                    
+                        <a [href]="socialLinks.LEETCODE" target="_blank">
+                            <img src="../../assets/social/leetcode.png" alt="..." class="rounded-circle"
+                                style="min-width: 45px; min-height: 45px; max-width: 45px; max-height: 45px;">
+                        </a>
+                </div>
+            </div>
+    
+            
         </div>
-
-        <div class="Box">
-            <a [href]="socialLinks.GITHUB" target="_blank">
-                <img src="../../assets/social/icons8-github-48.png" alt="..." class="rounded-circle"
-                    style="min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px;">
-            </a>
-
-            <a [href]="socialLinks.INSTAGRAM" target="_blank">
-                <img src="../../assets/social/icons8-instagram-48.png" alt="..." class="rounded-circle"
-                    style="min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px;">
-            </a>
-
-            <a [href]="socialLinks.LINKEDIN" target="_blank">
-                <img src="../../assets/social/icons8-linkedin-48.png" alt="..." class="rounded-circle"
-                    style="min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px;">
-            </a>
-
-            <a [href]="socialLinks.LEETCODE" target="_blank">
-                <img src="../../assets/social/leetcode.png" alt="..." class="rounded-circle"
-                    style="min-width: 48px; min-height: 48px; max-width: 48px; max-height: 48px;">
-            </a>
-        </div>
+        
     </div>
+
+
 </div>
+
+
+
+

@@ -1,13 +1,12 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { NgForOf } from '@angular/common';
-
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgForOf,],
+  imports: [NgForOf],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent{
 

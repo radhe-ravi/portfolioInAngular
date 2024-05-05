@@ -1,6 +1,5 @@
 import { Component, Renderer2,Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Sender } from '../_model/Sender';
 import {NgForOf} from "@angular/common";
 
 @Component({
@@ -12,7 +11,22 @@ import {NgForOf} from "@angular/common";
 })
 export class ResumeComponent {
 
-  @Input() sender = {}as Sender;
+  skills = {
+    language : ["Java",'JavaScript','C++','Typescript'],
+    framework : ['Angular','Node','React','Express'],
+    library : ['Spring Boot','JavaFX','Hibernate','Thymeleaf'],
+    database : ['MySQL','MongoDB'],
+    tools : ['IntelliJ','Eclipse','Visual Studio Code','Git','Postman','Maven'],
+    other : ['HTML','CSS','Bootstrap','Microservices','Problem Solving'],
+    devops:['Linux','Wnndows','Docker','Data structures']
+
+  }
+
+  certificates ={
+    coursera :['Object Oriented Programming in JAVA by San Diego University.',' Digital Transformation with Google Cloud by Google.','Introduction to Web Development course by UC DAVIS.'],
+    infyosis:['Java 11 advanced by Infosys.','Spring MVC Course by Infosys Springboard.']
+  }
+ 
   constructor(private titleService: Title,private renderer:Renderer2) { 
     
     this.titleService.setTitle('Radhe Ravi - Resume');

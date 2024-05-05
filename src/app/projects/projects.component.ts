@@ -1,17 +1,41 @@
-import { Component } from '@angular/core';
+import { Component,HostBinding } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { Project } from '../_model/project';
 import { Tag } from '../_model/tag';
 import { NgForOf } from '@angular/common';
-
-
+import { trigger, transition, style, animate, state } from '@angular/animations';
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [ProjectCardComponent, NgForOf],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrl: './projects.component.css',
+
+  animations: [
+    trigger('flyInOut', [
+      state('in', style({ opacity:0 })),
+      transition('void => *', [
+        style({ opacity:0 }),
+        animate(1500)
+      ]),
+      transition('* => void', [
+        animate(100, style({ transform: 'translateX(100%)' }))
+      ])
+    ])
+  ]
+
+  /*
+  animations:[
+    trigger('fadein',[
+      transition('void=>*',[
+        style({opacity:0}),
+        animate(1500,style({opacity:1})),
+      ])
+    ])
+  ]
+  */
+
 })
 export class ProjectsComponent {
 

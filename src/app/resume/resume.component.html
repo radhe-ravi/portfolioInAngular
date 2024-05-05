@@ -1,179 +1,158 @@
 <div class="container text-center">
-    <button (click) = "DownloadFile()" class="btn btn-primary mb-5 shadow border"> Download Resume</button>
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border"> Download Resume</button>
 
     <div class="accordion" id="accordionExample" style="background-color: aqua;">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Education
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body" style="text-align: left;">
-                <h3 style="color: blue;">
-                    Chandidarh University <strong style="font-size: x-small ;display: inline; color: black;">2020 - 2024</strong>
-                </h3>
-                <p style="font-size: smaller;">
-                    Bachelor of Engineering in Computer Science and Engineering 
-                </p>
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Education
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="text-align: left;">
+                    <h3 style="color: blue;">
+                        Chandidarh University <strong style="font-size: x-small ;display: inline; color: black;">2020 -
+                            2024</strong>
+                    </h3>
+                    <p style="font-size: smaller;">
+                        Bachelor of Engineering in Computer Science and Engineering
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Certification
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body" style="text-align: left;">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Certification
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="text-align: left;">
 
-                <ul>
-                    <li>
-                        Spring MVC Course by Infosys Springboard.
-                    </li>
-                    
-                    <li>
-                        Object Oriented Programming in JAVA by San Diego University.
-                    </li>
-                    <li>
-                        Introduction to Web Development course by UC DAVIS.
-                    </li>
-
-                    <li>
-                        Digital Transformation with Google Cloud by Google.
-                    </li>
-                    <li>
-                        Java 11 advanced by Infosys.
-                    </li>
-                </ul>
-
-
-           </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Skills
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <div class="card border-sucess" style="display:flex;">
-
-                <div class="Box" style="justify-content: space-evenly;">
-                    <h4 style="color: rgb(39, 80, 82);">
-                        Programming Language
-                    </h4>
-                    <ul style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly"> 
-                        <li *ngFor = "let lang of sender.language"> Java
-                            
+                    <ul>
+                        <li *ngFor="let coursera of certificates.coursera">
+                            {{coursera}}
                         </li>
-                        
-                        <li>
-                            Javascript
+                        <li *ngFor="let coursera of certificates.infyosis">
+                            {{coursera}}
                         </li>
-                        
-                        <li>
-                            C++
-                        </li>
-                        
-                        <li>
-                            Typescript
-                        </li> 
                     </ul>
+
+
                 </div>
-
-
-                <!-- 2nd Box -->
-                
-
-                <div class="Box" style="margin-top: 10px;">
-                    <h4 style="color: rgb(39, 80, 82);">
-                        Frameworks and Libraries
-                    </h4>
-                    <div style="display: flex; justify-content: space-evenly;" >
-                        <ul style="text-align: left;">
-                            <li>
-                                Spring-boot
-                            </li>
-                            
-                            <li>
-                                Hibernate
-                            </li>
-                            
-                            <li>
-                                Thymeleaf
-                            </li>
-                            
-                            <li>
-                                Data Jpa
-                            </li>
-                        </ul>
-
-                        <ul style="text-align: left;">
-                            <li>
-                                Node js
-                            </li>
-                            
-                            <li>
-                                Angular
-                            </li>
-                            
-                            <li>
-                                React
-                            </li>
-
-                            <li>
-                                Express
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-
-
-                <!-- 3rd Box -->
-                <div class="Box" style="margin-top: 10px;">
-                    <h4 style="color: rgb(39, 80, 82);">
-                        Other Skills
-                    </h4>
-                    <div style="display: flex; justify-content: space-evenly;" >
-                        <ul style="text-align: left;">
-                            <li>
-                                Github
-                            </li>
-                            
-                            <li>
-                                Microservices
-                            </li>
-                            
-                            <li>
-                                Data Structure
-                            </li>
-                        </ul>
-
-                        <ul style="text-align: left;">
-                            <li>
-                                Linux
-                            </li>
-                            
-                            <li>
-                                Docker
-                            </li>
-                                
-                            <li>
-                                Problem Solving
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                </div>            
             </div>
-          </div>
         </div>
-      </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Skills
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="card border-sucess" style="display:flex;">
+
+                        <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
+
+
+                            <div class="Box" style="justify-content: space-evenly;">
+                                <h4 style="color: rgb(39, 80, 82);">
+                                    Programming Language
+                                </h4>
+                                <ul
+                                    style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+
+                                    <li *ngFor="let lang of skills?.language">{{ lang }}</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- 2nd Box -->
+
+
+                        <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
+                            <div class="Box" style="justify-content: space-around;">
+                                <h4 style="color: rgb(39, 80, 82);">
+                                    Libraries and Frameworks
+                                </h4>
+                                <ul
+                                    style="text-align: left; margin-top: auto;display: flex; justify-content: space-around; list-style-type:none;">
+
+                                    <li *ngFor="let lang of skills?.library">{{ lang }}</li>
+                                </ul>
+
+                                <ul
+                                    style="text-align: left; margin-top: auto;display: flex; justify-content: space-around;list-style-type:none">
+
+                                    <li *ngFor="let lang of skills?.framework">{{ lang }}</li>
+                                </ul>
+                            </div>
+
+                        </section>
+
+
+                        <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
+
+                            <div class="Box" style="justify-content: space-evenly;">
+                                <h4 style="color: rgb(39, 80, 82);">
+                                    Databases
+                                </h4>
+                                <ul
+                                    style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+
+                                    <li *ngFor="let tool of skills?.database">{{ tool }}</li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+                        <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
+
+                            <div class="Box" style="justify-content: space-evenly;">
+                                <h4 style="color: rgb(39, 80, 82);">
+                                    Tools
+                                </h4>
+                                <ul
+                                    style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+
+                                    <li *ngFor="let tool of skills?.tools">{{ tool }}</li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+
+
+                        <!-- 3rd Box -->
+
+                        <section class="shadow" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
+
+                            <div class="Box" style="justify-content: space-evenly;">
+                                <h4 style="color: rgb(39, 80, 82);">
+                                    Other Skills
+                                </h4>
+                                <ul
+                                    style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+                                    <li *ngFor="let tool of skills?.other">{{ tool }}</li>
+                                </ul>
+                                <ul
+                                    style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+
+                                    <li *ngFor="let tool of skills?.devops">{{ tool }}</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>

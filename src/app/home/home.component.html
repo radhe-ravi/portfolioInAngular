@@ -1,22 +1,14 @@
-<div class="container">
+<div @flyInOut class="container">
     <div class="row">
         <div class="col-lg shadow border m-1">
-
             <div class="text-center" style="font-size: large;">
                 <h2 style="margin: 10px 0 -5px 10px;"> About me </h2>
-                <img src="../../assets/images/pics-modified.png" alt="profile image" width="256" height="256"
+                <img @fadein src="../../assets/images/pics-modified.png" alt="profile image" width="256" height="256"
                     class="rounded-circle" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;"/>
                 <div class="card border-primary mb-3" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
                     <div class="Box" style="margin: 10px 10px 10px 10px;text-align: justify; min-width: fit-content; max-width: fit-content; min-height: fit-content; max-height: fit-content; padding: 10px 10px 10px 10px;">
                         <p>
-                            Hi,I'm <B style="color: red; font-size: larger;">Radhe Ravi</B>, an upcoming Software Engineer.I have a strong background in
-                            Development and am always looking for new challenges and opportunities to learn and grow. I am a
-                            Developer and enjoy Writing Poems in my free time.
-    
-                            I am excited to bring my skills to a dynamic and innovative team. If you are looking for a
-                            Developer who is Java Freak and passionate about Development, I would love to hear from you.
-    
-                            Thank you for visiting my portfolio. I look forward to connecting with you.
+                            Hi, I'm <B style="color: red; font-size: larger;">{{name}}</B>,{{description}}
                         </p>
                     </div>
                 </div>

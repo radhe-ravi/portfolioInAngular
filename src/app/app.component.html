@@ -1,5 +1,11 @@
-<div class="shadow-sm">
+<div @fadein class="shadow-sm">
     <app-header></app-header>
     <app-nav></app-nav>
 </div>
-<router-outlet></router-outlet>
+
+<div @fadein>
+    <router-outlet></router-outlet>
+</div>
+<div @fadein class="shadow-sm">
+    <app-project-modal></app-project-modal>
+</div>
