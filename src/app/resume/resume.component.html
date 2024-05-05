@@ -66,8 +66,7 @@
                                     <h4 style="color: rgb(39, 80, 82);">
                                         Programming Language
                                     </h4>
-                                    <ul
-                                        style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+                                    <ul style="text-align: left; justify-content: space-evenly;list-style-type:none">
     
                                         <li *ngFor="let lang of skills?.language">{{ lang }}</li>
                                     </ul>
@@ -78,18 +77,22 @@
     
     
                             <section class="shadow-lg rounded" style="margin: 10px 10px 10px 10px; padding: 10px 10px 10px 10px;">
-                                <div class="Box" style="justify-content: space-around;">
+                                <div class="Box" style="justify-content: center;">
                                     <h4 style="color: rgb(39, 80, 82);">
                                         Libraries and Frameworks
                                     </h4>
-                                    <ul
-                                        style="text-align: left; margin-top: auto;display: flex; justify-content: space-around; list-style-type:none;">
+                                    <div class="d-flex">
+                                        <ul
+                                        style="text-align: left; margin-top: auto; justify-content: space-around; list-style-type:none;">
     
                                         <li *ngFor="let lang of skills?.library">{{ lang }}</li>
                                     </ul>
-                                    <div>
+
+                                    </div>
+       
+                                    <div class="card">
                                         <ul
-                                        style="text-align: left; margin-top: auto;display: flex; justify-content: space-around;list-style-type:none;">
+                                        style="text-align: center; margin-top: auto;list-style-type:none;">
     
                                         <li *ngFor="let lang of skills?.framework">{{ lang }}</li>
                                     </ul>
@@ -106,7 +109,7 @@
                                         Databases
                                     </h4>
                                     <ul
-                                        style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+                                        style="text-align: left; margin-top: auto; justify-content: space-evenly;list-style-type:none">
     
                                         <li *ngFor="let tool of skills?.database">{{ tool }}</li>
                                     </ul>
@@ -121,7 +124,7 @@
                                         Tools
                                     </h4>
                                     <ul
-                                        style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+                                        style="text-align: left; margin-top: auto; justify-content: space-evenly;list-style-type:none">
     
                                         <li *ngFor="let tool of skills?.tools">{{ tool }}</li>
                                     </ul>
@@ -140,11 +143,11 @@
                                         Other Skills
                                     </h4>
                                     <ul
-                                        style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+                                        style="text-align: left; margin-top: auto; justify-content: space-evenly;list-style-type:none">
                                         <li *ngFor="let tool of skills?.other">{{ tool }}</li>
                                     </ul>
                                     <ul
-                                        style="text-align: left; margin-top: auto;display: flex; justify-content: space-evenly;list-style-type:none">
+                                        style="text-align: left; margin-top: auto; justify-content: space-evenly;list-style-type:none;">
     
                                         <li *ngFor="let tool of skills?.devops">{{ tool }}</li>
                                     </ul>
