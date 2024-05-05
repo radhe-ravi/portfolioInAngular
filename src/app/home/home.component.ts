@@ -22,6 +22,14 @@ import { Title } from '@angular/platform-browser';
         style({opacity:0}),
         animate(1500,style({opacity:1})),
       ])
+    ]),
+
+    trigger('flyOutIn', [
+      state('closed', style({ transform: 'translateX(-100%)' })),
+      transition('* => void', [
+        style({ transform: 'translateX(0)' }),
+        animate(1500)
+      ]),
     ])
   ]
 })

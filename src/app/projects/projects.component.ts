@@ -14,15 +14,12 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
 
   animations: [
     trigger('flyInOut', [
-      state('in', style({ opacity:0 })),
+      state('in', style({ transform: 'translateY(-100%)' })),
       transition('void => *', [
-        style({ opacity:0 }),
+        style({ transform: 'translateY(100%)' }),
         animate(1500)
       ]),
-      transition('* => void', [
-        animate(100, style({ transform: 'translateX(100%)' }))
-      ])
-    ])
+    ]),
   ]
 
   /*
