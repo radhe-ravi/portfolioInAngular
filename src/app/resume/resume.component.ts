@@ -42,7 +42,7 @@ export class ResumeComponent {
     database : ['MySQL','MongoDB'],
     tools : ['IntelliJ','Eclipse','Visual Studio Code','Git','Postman','Maven'],
     other : ['HTML','CSS','Bootstrap','Microservices','Problem Solving'],
-    devops:['Linux','Wnndows','Docker','Data structures']
+    devops:['Linux','Windows','Docker','Data structures']
 
   }
 
