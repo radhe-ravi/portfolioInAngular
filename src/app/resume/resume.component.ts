@@ -61,8 +61,8 @@ export class ResumeComponent {
 
     const link = this.renderer.createElement('a');
     link.setAttribute('target','_blank');
-    link.setAttribute('href','../../assets/files/radhe-resume_exp.pdf');
-    link.setAttribute('download','radhe-resume_exp.pdf');
+    link.setAttribute('href','../../assets/files/Radhe_Resume.pdf');
+    link.setAttribute('download','Radhe_Resume.pdf');
     link.click();
     link.remove();
 
